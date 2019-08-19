@@ -1,0 +1,21 @@
+<?php
+require_once '/home/admin/web/cheapfirstclass.com/public_html/wp-content/themes/cheapfirstclasstheme/request/class.phpmailer.php';
+$mail             = new PHPMailer();
+$mail->SMTPDebug  = 1;
+$mail->IsSMTP();
+$mail->SMTPAuth   = true;
+$mail->SMTPSecure = 'tls';
+$mail->Host       = "159.203.246.11";
+$mail->Port       = 587;
+$mail->Username   = "noreply@cheapfirstclass.com";
+$mail->Password   = "35CNi6BI5o";
+$mail->AddReplyTo("noreply@cheapfirstclass.com");
+$mail->SetFrom('noreply@cheapfirstclass.com','CheapFirstClass.com');
+$mail->Subject    = '11111';
+$sended = true;
+$mail->MsgHTML('message');
+$mail->AddAddress(trim('ilevgenij@gmail.com'));
+$mail->Send();
+echo "<pre>";
+var_dump($mail->Send());
+echo "</pre>";

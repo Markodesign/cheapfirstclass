@@ -1,0 +1,2 @@
+[29-Jan-2019 00:53:31 UTC] PHP Fatal error:  Call to undefined function add_filter() in /home/admin/web/cheapfirstclass.com/public_html/wp-content/plugins/contact-form-7/modules/akismet.php on line 7
+[29-Jan-2019 00:53:32 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/admin/web/cheapfirstclass.com/public_html/wp-content/plugins/contact-form-7/modules/file.php on line 8

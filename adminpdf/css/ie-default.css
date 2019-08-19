@@ -1,0 +1,29 @@
+
+/* --- [ min-height fix    ] --- */
+
+.body { overflow: visible; height: 1%; }
+
+/* H2 background */
+
+h2 { height: 1%; }
+
+/* --- [ margin fix    ] --- */
+
+.body-sm { display: inline; }
+.body-lg { display: inline; }
+
+/* --- [ menu fix    ] --- */
+
+.top-menu li a  { white-space:nowrap; width: 10px; }
+#nav li a  { white-space:nowrap; width: 10px; }
+
+.input-sm, .input-lg { overflow: visible; height: 1%; display: inline; }
+
+
+/* --- [ Table row display fix   ] --- */
+
+.show-tr { display: block; }
+
+.field-checkbox {
+    margin: 110px;
+}

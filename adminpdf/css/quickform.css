@@ -1,0 +1,253 @@
+/*
+ *
+ * Default stylesheet for HTML_QuickForm2 forms.
+ *
+ * Based on stylesheet from HTML_QuickForm_Renderer_Tableless package 
+ * by Mark Wiesemann <wiesemann at php dot net>
+ *
+ * $Id: quickform.css 295963 2010-03-08 14:33:43Z avb $
+ *
+ */
+
+.quickform form {
+    margin: 0;
+    padding: 0;
+}
+.quickform fieldset {
+    min-height: 20px;
+    padding: 19px 0 0 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    /*position: relative;*/
+}
+.quickform fieldset.buttons{
+    padding-bottom: 19px;
+}
+.quickform fieldset legend {
+    font-weight: bold;
+    border: none;
+
+}
+.quickform label {
+    display: block; 
+    float: left;
+    width: 160px;
+    text-align: right;
+}
+.quickform fieldset.buttons label{
+    display: none;
+}
+.quickform label.strong{
+    font-weight: bold;
+}
+.quickform label.strong small{
+    font-weight: normal;
+}
+.quickform label.element {
+}
+ .row .element select {
+height: 30px;
+ }
+.quickform textarea {
+    overflow: auto;
+    min-height: 30px;
+    height: 100px;
+    width: 90%;
+}
+.quickform br {
+    clear: left;
+}
+.quickform div.row {
+    padding: 0;
+   margin: 0 0 20px 0;
+    clear: both;
+}
+
+.quickform div.row.option-item{
+    display: block;
+    float: left;
+    clear: none;
+    min-width: 210px!important;
+    height: 50px!important;
+}
+
+.quickform fieldset.buttons div.row{
+    margin: 0;
+}
+.quickform div.element {
+    display: block;
+    /*padding: 0;*/
+    margin-left: 180px;
+}
+.quickform fieldset.buttons div.element {
+margin: 0;
+    float: left;
+}
+.quickform div.reqnote {
+    clear: both;
+    font-size: 80%; 
+    margin: 0.5em 0 0 1em;
+}
+.quickform span.required{
+display: none;
+}
+.quickform span.error {
+
+    color: #b94a48;
+    background-color: #f2dede;
+    margin: -4px 20px 10px 0;
+    padding: 8px 0 8px 14px;
+    display: block;
+
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid #eed3d7;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    height: 20px;
+    /*border-color: #eed3d7;*/
+}
+.quickform div.error input, .quickform div.error textarea {
+    border: 1px solid red;
+}
+.quickform div input.input-first-price{
+border-radius: 4px 0 0 4px;
+    width: 162px!important;
+    text-align: right;
+    /*border-right: none;*/
+
+}
+
+.quickform div input.input-second-price{
+    border-radius:0 4px 4px 0;
+    width: 30px!important;
+    margin-left: -1px;
+    /*border-left: none;*/
+
+}
+
+
+.quickform .image_preview {
+    max-width:500px;
+    display:block;
+    border: 1px solid #c3c3c3;
+    padding:2px;
+    margin-bottom:4px;
+}
+
+.quickform fieldset.buttons label.element{
+    margin: 0;
+    padding: 0;
+}
+.quickform .element.error.textarea{
+    /*position: relative;*/
+    /*height: 160px;*/
+
+}
+.quickform .element.error{
+    /*position: relative;*/
+    /*height: 75px;*/
+
+}
+.quickform .element.error span.error{
+    /*top: 44px;*/
+    /*position:absolute ;*/
+    width: 90%;
+    display: none;
+}
+.quickform .element.error.textarea span.error{
+    /*top: 125px;*/
+/**/
+}
+.quickform span.error:after{
+content: '×';
+    position: relative;
+    top: -41px;
+    right: 14px;
+    line-height: 20px;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.4;
+
+}
+.close:hover, .close:focus {
+    color: #000000;
+    text-decoration: none;
+
+}
+.quickform .add-on{
+    display: inline-block;
+    height: 20px;
+    min-width: 16px;
+    padding: 4px 5px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: center;
+    text-shadow: 0 1px 0 #ffffff;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    border-radius: 0 4px 4px 0;
+    top: -3px;
+    left: -1px;
+    position: relative;
+    z-index: 10;
+}
+
+.quickform .add-on i{
+    display: inline-block;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+.quickform input.datepicker, .quickform input.datepicker2, .quickform input.dateonepicker {
+    border-radius:  4px 0 0 4px;
+}
+
+.quickform .ui-datepicker-trigger {
+    position: relative;
+    left: -28px;
+    padding: 5px;
+    cursor: pointer;
+    top: -5px;
+border: none;
+}
+.warn-bx-text{
+    float: left;
+    padding-right: 20px!important;
+}
+#submit_buttons-0{
+    max-height: 45px;
+}
+.quickform .title-element{
+    font-weight: bold;
+    font-size: 21px;
+    position: relative;
+    left: -180px;
+}
+.quickform div.row.alternate-legend label{
+    display: none;
+}
+.quickform label.label-error {
+    color: red;
+}
+h1 span.h2-date {
+    font-size: 33px;
+}
+.invoice-num , .invoice_time{
+        display: inline-block;
+    min-width: 325px;
+}
+.invoice-number{
+        display: inline-block;
+    min-width: 25px;
+}
+.invoice_time{
+    min-width:  150px;
+}

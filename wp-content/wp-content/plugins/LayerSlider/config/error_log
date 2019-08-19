@@ -1,0 +1,17 @@
+[20-Aug-2015 06:01:41 America/Denver] PHP Fatal error:  Call to undefined function __() in /home8/cheapfir/public_html/wp-content/plugins/LayerSlider/config/defaults.php on line 14
+[20-Aug-2015 06:01:42 America/Denver] PHP Fatal error:  Call to undefined function plugins_url() in /home8/cheapfir/public_html/wp-content/plugins/LayerSlider/config/plugin.defaults.php on line 7
+[09-Sep-2015 14:33:09 America/Denver] PHP Fatal error:  Call to undefined function __() in /home8/cheapfir/public_html/wp-content/plugins/LayerSlider/config/defaults.php on line 14
+[09-Sep-2015 14:57:51 America/Denver] PHP Fatal error:  Call to undefined function plugins_url() in /home8/cheapfir/public_html/wp-content/plugins/LayerSlider/config/plugin.defaults.php on line 7
+[09-Sep-2015 21:27:44 America/Denver] PHP Fatal error:  Call to undefined function __() in /home8/cheapfir/public_html/wp-content/plugins/LayerSlider/config/defaults.php on line 14
+[09-Sep-2015 21:29:30 America/Denver] PHP Fatal error:  Call to undefined function plugins_url() in /home8/cheapfir/public_html/wp-content/plugins/LayerSlider/config/plugin.defaults.php on line 7
+[10-Sep-2015 02:56:30 America/Denver] PHP Fatal error:  Call to undefined function __() in /home8/cheapfir/public_html/wp-content/plugins/LayerSlider/config/defaults.php on line 14
+[10-Sep-2015 02:59:27 America/Denver] PHP Fatal error:  Call to undefined function plugins_url() in /home8/cheapfir/public_html/wp-content/plugins/LayerSlider/config/plugin.defaults.php on line 7
+[10-Sep-2015 09:12:56 America/Denver] PHP Fatal error:  Call to undefined function __() in /home8/cheapfir/public_html/wp-content/plugins/LayerSlider/config/defaults.php on line 14
+[10-Sep-2015 09:15:08 America/Denver] PHP Fatal error:  Call to undefined function plugins_url() in /home8/cheapfir/public_html/wp-content/plugins/LayerSlider/config/plugin.defaults.php on line 7
+[11-Sep-2015 03:34:08 America/Denver] PHP Fatal error:  Call to undefined function __() in /home8/cheapfir/public_html/wp-content/plugins/LayerSlider/config/defaults.php on line 14
+[11-Sep-2015 03:38:00 America/Denver] PHP Fatal error:  Call to undefined function plugins_url() in /home8/cheapfir/public_html/wp-content/plugins/LayerSlider/config/plugin.defaults.php on line 7
+[22-Sep-2015 17:54:44 America/Denver] PHP Fatal error:  Call to undefined function __() in /home8/cheapfir/public_html/wp-content/plugins/LayerSlider/config/defaults.php on line 14
+[23-Sep-2015 22:57:46 America/Denver] PHP Fatal error:  Call to undefined function __() in /home8/cheapfir/public_html/wp-content/plugins/LayerSlider/config/defaults.php on line 14
+[25-Sep-2015 16:12:00 America/Denver] PHP Fatal error:  Call to undefined function plugins_url() in /home8/cheapfir/public_html/wp-content/plugins/LayerSlider/config/plugin.defaults.php on line 7
+[25-Sep-2015 22:30:55 America/Denver] PHP Fatal error:  Call to undefined function plugins_url() in /home8/cheapfir/public_html/wp-content/plugins/LayerSlider/config/plugin.defaults.php on line 7
+[26-Sep-2015 07:21:25 America/Denver] PHP Fatal error:  Call to undefined function plugins_url() in /home8/cheapfir/public_html/wp-content/plugins/LayerSlider/config/plugin.defaults.php on line 7

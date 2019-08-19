@@ -1,0 +1,52 @@
+# Use PHP5.4 as default
+AddHandler application/x-httpd-php54 .php
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+#Включаем запись php ошибок в файл
+php_flag log_errors on
+# set file to log to
+php_value error_reporting 55
+php_value error_log  PHP_errors.log
+#увеличиваем размеры
+php_value post_max_size 50M
+php_value upload_max_filesize 50M
+php_value memory_limit 250M
+
+AddEncoding gzip .gz
+RewriteCond %{HTTP:Accept-encoding} gzip
+RewriteCond %{REQUEST_FILENAME}.gz -f
+RewriteRule ^(.*)$ $1.gz [QSA,L]
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType text/javascript "access plus 7 days"
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType image/gif "access plus 7 days"
+  ExpiresByType image/jpeg "access plus 7 days"
+  ExpiresByType image/png "access plus 7 days"
+  ExpiresByType image/png "access plus 7 days"
+  AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-otf x-font/eot x-font/ashx
+    AddOutputFilterByType DEFLATE font/truetype font/opentype
+</IfModule>
+# Самая главная часть: выдача заголовка, разрешающего кеш определенных типов файлов
+<ifModule mod_headers.c>
+    <filesMatch "\.(ico|jpe?g|png|gif|swf|woff)$">
+      Header set Cache-Control "max-age=2592000, public"
+    </filesMatch>
+    <filesMatch "\.(css)$">
+      Header set Cache-Control "max-age=604800, public"
+    </filesMatch>
+    <filesMatch "\.(js)$">
+      Header set Cache-Control "max-age=604800, public"
+    </filesMatch>
+</ifModule>

@@ -1,0 +1,4 @@
+[15-Jan-2019 17:18:36 UTC] PHP Fatal error:  Call to undefined function plugin_basename() in /home/admin/web/cheapfirstclass.com/public_html/wp-content/plugins/contact-form-7/wp-contact-form-7.php on line 19
+[01-Feb-2019 11:26:49 UTC] PHP Fatal error:  Call to undefined function plugin_basename() in /home/admin/web/cheapfirstclass.com/public_html/wp-content/plugins/contact-form-7/wp-contact-form-7.php on line 19
+[24-Feb-2019 13:09:43 UTC] PHP Fatal error:  Call to undefined function plugin_basename() in /home/admin/web/cheapfirstclass.com/public_html/wp-content/plugins/contact-form-7/wp-contact-form-7.php on line 19
+[19-Apr-2019 18:07:11 UTC] PHP Fatal error:  Call to undefined function plugin_basename() in /home/admin/web/cheapfirstclass.com/public_html/wp-content/plugins/contact-form-7/wp-contact-form-7.php on line 19

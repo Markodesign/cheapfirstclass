@@ -1,0 +1,11 @@
+[29-Nov-2016 03:00:48 UTC] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/admin/web/cheapfirstclass.com/public_html/wp-includes/registration.php on line 7
+[29-Nov-2016 03:33:28 UTC] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/admin/web/cheapfirstclass.com/public_html/wp-includes/registration.php on line 7
+[29-Nov-2016 05:00:19 UTC] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/admin/web/cheapfirstclass.com/public_html/wp-includes/registration.php on line 7
+[29-Nov-2016 17:08:26 UTC] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/admin/web/cheapfirstclass.com/public_html/wp-includes/registration.php on line 7
+[29-Nov-2016 17:51:19 UTC] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/admin/web/cheapfirstclass.com/public_html/wp-includes/registration.php on line 7
+[02-Jan-2017 10:26:48 UTC] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/admin/web/cheapfirstclass.com/public_html/wp-includes/rss-functions.php on line 8
+[03-Jan-2017 06:45:53 UTC] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home/admin/web/cheapfirstclass.com/public_html/wp-includes/functions.php on line 8
+[18-Jan-2017 04:03:44 UTC] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/admin/web/cheapfirstclass.com/public_html/wp-includes/registration-functions.php on line 7
+[18-Jan-2017 04:03:44 UTC] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/admin/web/cheapfirstclass.com/public_html/wp-includes/registration-functions.php on line 7
+[09-Mar-2017 03:50:52 UTC] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/admin/web/cheapfirstclass.com/public_html/wp-includes/rss-functions.php on line 8
+[22-Mar-2017 00:23:39 UTC] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/admin/web/cheapfirstclass.com/public_html/wp-includes/registration-functions.php on line 7

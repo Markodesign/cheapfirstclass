@@ -1,0 +1,39 @@
+<?php
+
+/*-----------------------------------------------------
+        PATH
+-----------------------------------------------------*/
+$cms_folder_name = basename(realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..'));
+
+$config['paths']['url']  = 'http://canada.ua/dex/';
+$config['paths']['urls'] = 'http://canada.ua/dex/';
+
+$config['paths']['path'] = realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..') . DIRECTORY_SEPARATOR;
+$config['paths']['upload']   = $config['paths']['path'] . 'uploads' . DIRECTORY_SEPARATOR; 
+$config['paths']['upload_url']   = $config['paths']['url'] . 'uploads/'; 
+$config['paths']['cms_path'] = $config['paths']['path'] . $cms_folder_name . DIRECTORY_SEPARATOR;
+$config['paths']['cms_url']  = $config['paths']['url'] . $cms_folder_name . '/';
+$config['paths']['cms_urls'] = $config['paths']['urls'] . $cms_folder_name . '/';
+
+$config['paginator']['itemsPerPage'] = 10;
+
+//Families Edit
+$config['families']['ajaxRefresh'] = 20000; //mili seconds
+$config['families']['adminInactiv'] = 300; //seconds (5 minuts)
+
+/*-----------------------------------------------------
+        DB
+-----------------------------------------------------*/
+$config['db']['host']     = 'localhost';
+$config['db']['port']     = '3306';
+$config['db']['login']    = 'root';
+$config['db']['password'] = '';
+$config['db']['db']       = 'dex';
+$config['db']['encoding'] = 'utf8';
+
+
+
+/*-----------------------------------------------------
+        LANG
+-----------------------------------------------------*/
+$config['lang_edit']      = 1;

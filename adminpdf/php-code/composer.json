@@ -1,0 +1,17 @@
+{
+	"autoload": {
+		"psr-0": {"": "classes/"}
+	},
+	"require": {
+	  	"smarty/smarty": "~3.1",
+	  	"zendframework/zendframework1":"~1.12",
+		"dompdf/dompdf": "0.6.*"
+
+
+    	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "2.*-dev"
+		}
+	}
+}

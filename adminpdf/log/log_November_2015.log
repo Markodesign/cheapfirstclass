@@ -1,0 +1,141 @@
+==========
+========== 
+IP = 127.0.0.1 ; time = November 2 2015 at 15:26:09; table name = categories; action = edit; id = 25; name = Milk; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 2 2015 at 15:34:26; table name = categories; action = add; id = --; name = test; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 2 2015 at 15:56:45; table name = categories; action = delete; id = 27; name = test; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 2 2015 at 15:57:14; table name = categories; action = add; id = --; name = testtret; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 2 2015 at 15:57:20; table name = categories; action = delete; id = 28; name = testtret; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 2 2015 at 16:00:28; table name = categories; action = edit; id = 26; name = Tea; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 2 2015 at 16:02:53; table name = categories; action = edit; id = 26; name = Tea; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 3 2015 at 10:46:25; table name = taxes; action = edit; id = --; name = 0.12234 , 0.01324; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36 OPR/32.0.1948.69 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 3 2015 at 15:15:39; table name = categories; action = edit; id = 17; name = Equipment and Apparel; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36 OPR/32.0.1948.69 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 5 2015 at 09:38:47; table name = categories; action = add; id = --; name = tttttttttt; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36 OPR/32.0.1948.69 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 5 2015 at 09:38:59; table name = categories; action = delete; id = 29; name = tttttttttt; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36 OPR/32.0.1948.69 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 5 2015 at 09:43:45; table name = categories; action = add; id = --; name = uuu; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36 OPR/32.0.1948.69 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 5 2015 at 09:43:58; table name = categories; action = edit; id = 30; name = uuu; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36 OPR/32.0.1948.69 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 5 2015 at 10:04:10; table name = categories; action = delete; id = 30; name = uuu; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36 OPR/32.0.1948.69 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 5 2015 at 12:42:22; table name = taxes; action = edit; id = --; name = 0.12234 , 0; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36 OPR/32.0.1948.69 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 5 2015 at 12:44:28; table name = taxes; action = edit; id = --; name = 0.12234 , 0.05; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36 OPR/32.0.1948.69 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 5 2015 at 12:44:36; table name = taxes; action = edit; id = --; name = 0.12234 , 0.05; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36 OPR/32.0.1948.69 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 5 2015 at 12:49:09; table name = taxes; action = edit; id = --; name = 0.12234 , 0; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36 OPR/32.0.1948.69 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 12 2015 at 09:25:51; table name = taxes; action = edit; id = --; name = 4.3232 , 0; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 12 2015 at 09:28:30; table name = taxes; action = edit; id = --; name = 4.3232 , 0; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 12 2015 at 09:51:58; table name = access; action = edit; id = --; name = ; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 12 2015 at 09:52:54; table name = access; action = edit; id = --; name = ; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 12 2015 at 09:52:56; table name = access; action = edit; id = --; name = ; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 12 2015 at 09:58:12; table name = access; action = edit; id = --; name = ; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 13 2015 at 13:28:09; table name = access; action = edit; id = --; name = ; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 13 2015 at 13:37:00; table name = access; action = edit; id = --; name = ; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 13 2015 at 13:40:44; table name = access; action = edit; id = --; name = ; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 13 2015 at 13:58:07; table name = items; action = delete; id = 5; name = Gift Card; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 13 2015 at 14:01:25; table name = pin; action = edit; id = --; name = 12345; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 13 2015 at 14:04:14; table name = pin; action = edit; id = --; name = 12345; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 16 2015 at 10:19:56; table name = items; action = edit; id = 144; name = V60 Plastic Dripper; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 16 2015 at 10:20:29; table name = items; action = edit; id = 144; name = V60 Plastic Dripper; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 16 2015 at 10:20:49; table name = items; action = edit; id = 144; name = V60 Plastic Dripper; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 16 2015 at 10:39:06; table name = items; action = add; id = 312; name = 2; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 16 2015 at 10:43:20; table name = items; action = add; id = 313; name = dfgdf; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 16 2015 at 10:43:30; table name = items; action = edit; id = 313; name = dfgdf; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 17 2015 at 08:30:58; table name = taxes; action = edit; id = --; name = 0 , 0; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 17 2015 at 08:32:45; table name = taxes; action = edit; id = --; name = 0 , 0; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 17 2015 at 08:33:07; table name = taxes; action = edit; id = --; name = 0 , 0; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 17 2015 at 08:33:11; table name = taxes; action = edit; id = --; name = 0 , 0; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 17 2015 at 08:35:33; table name = taxes; action = edit; id = --; name = 0 , 0; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 17 2015 at 08:50:41; table name = taxes; action = edit; id = --; name = 0 , 0; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 19 2015 at 14:51:05; table name = options; action = delete; id = 87; name = Sugar; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 19 2015 at 14:51:21; table name = options; action = delete; id = 99; name = цук; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 26 2015 at 13:45:23; table name = taxes; action = edit; id = --; name = 0.3333 , 0.3333; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 26 2015 at 13:55:29; table name = taxes; action = edit; id = --; name = 0.021 , 0.021; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;
+==========
+========== 
+IP = 127.0.0.1 ; time = November 26 2015 at 13:56:04; table name = taxes; action = edit; id = --; name = 0.021 , 0.021; USER_AGENT = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 ;

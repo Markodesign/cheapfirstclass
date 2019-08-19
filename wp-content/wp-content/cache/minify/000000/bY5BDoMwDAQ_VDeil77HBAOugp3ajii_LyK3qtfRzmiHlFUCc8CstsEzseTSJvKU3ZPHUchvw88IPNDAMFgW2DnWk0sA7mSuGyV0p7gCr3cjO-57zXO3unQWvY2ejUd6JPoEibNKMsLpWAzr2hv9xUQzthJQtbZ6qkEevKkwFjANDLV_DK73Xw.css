@@ -1,0 +1,36 @@
+div.wpcf7{margin:0;padding:0}div.wpcf7-response-output{margin:2em
+0.5em 1em;padding:0.2em 1em}div.wpcf7 .screen-reader-response{position:absolute;overflow:hidden;clip:rect(1px,1px,1px,1px);height:1px;width:1px;margin:0;padding:0;border:0}div.wpcf7-mail-sent-ok{border:2px
+solid #398f14}div.wpcf7-mail-sent-ng{border:2px
+solid #f00}div.wpcf7-spam-blocked{border:2px
+solid #ffa500}div.wpcf7-validation-errors{border:2px
+solid #f7e700}span.wpcf7-form-control-wrap{position:relative}span.wpcf7-not-valid-tip{color:#f00;font-size:1em;display:block}.use-floating-validation-tip span.wpcf7-not-valid-tip{position:absolute;top:20%;left:20%;z-index:100;border:1px
+solid #f00;background:#fff;padding: .2em .8em}span.wpcf7-list-item{margin-left:0.5em}.wpcf7-display-none{display:none}div.wpcf7 img.ajax-loader{border:none;vertical-align:middle;margin-left:4px}div.wpcf7 div.ajax-error{display:none}div.wpcf7
+.placeheld{color:#888}.wpcf7-starratingawesome.starratingawesome{clear:both;display:inline-block;float:none;padding:0;margin:5px
+0 10px;border:none}.starratingawesome>input{margin-left:0}.starratingawesome:not(:checked)>input{position:absolute;clip:rect(0,0,0,0)}.starratingawesome:not(:checked)>label{float:right;overflow:hidden;white-space:nowrap;cursor:pointer;color:#E1E5ED;line-height:1.2em;width:1em;font-size:100%;margin-right:0.2em}.starratingawesome>input:checked~label{color:#5DB4EC}.starrating_number{color:#5DB4EC;display:inline-block;float:right;line-height:1em;padding-left:10px;padding-right:20px;font-weight:bold;font-size:110%}.starratingawesome:not(:checked)>label:hover,.starratingawesome:not(:checked)>label:hover~label{color:#FFD700}.starratingawesome>input:checked+label:hover,.starratingawesome>input:checked+label:hover~label,.starratingawesome>input:checked~label:hover,.starratingawesome>input:checked~label:hover~label,.starratingawesome>label:hover~input:checked~label{color:#EA0}.starratingawesome>label:active{position:relative;top:auto;left:0}.lightcolor.rating_title{font-size:15px;line-height:15px;margin:0
+0 5px!important}.cf-tr:before,.cf-tr:after{content:" ";display:table}.cf-tr:after{clear:both}.cf-tr{*zoom:1}.testimonial_rotator_wrap{margin:20px
+10px;padding:10px;overflow:hidden;position:relative}.testimonial_rotator
+.slide{width:100%;height:auto}.testimonial_rotator_wrap.with-prevnext{padding:10px
+40px}.testimonial_rotator .has-image .img,
+.testimonial_rotator_single.has-image
+.img{width:20%;margin-right:5%;float:left;padding:0;padding-top: .5em}.testimonial_rotator .has-image .img img,
+.testimonial_rotator_single.has-image .img
+img{width:100%;max-width:150px;height:auto}.testimonial_rotator .has-image .text,
+.testimonial_rotator_single.has-image
+.text{width:75%;float:left;padding:0;margin:0}.testimonial_rotator.format-rotator
+.slide{display:none}.testimonial_rotator h1,
+.testimonial_rotator
+h2{margin:10px
+0 0 0;padding:0}.testimonial_rotator
+.testimonial_rotator_slide_title{margin:0
+0 5px 0}.testimonial_rotator_single{}.testimonial_rotator_single
+.testimonial_rotator_stars{}.testimonial_rotator_widget_wrap
+.testimonial_rotator_stars{padding:10px
+0}.testimonial_rotator.format-list
+.slide{margin:40px
+0}.testimonial_rotator_author_info{font-size:1.1em;font-style:italic;line-height:1.2em;padding-left:15px;border-left:solid 3px #efefef;margin:10px
+0}.testimonial_rotator_microdata{display:none}.testimonial_rotator_stars{padding:10px
+0}.testimonial_rotator_star{margin:0
+3px 0 0;float:left;width:20px;height:20px;color:#d8b767;font-size:20px;line-height:20px}.testimonial_rotator.rounded
+img{border-radius:50%}.testimonial-rotator-view-more{text-decoration:none;white-space:nowrap}.testimonial_rotator_paged
+a{padding:4px
+10px;text-decoration:none}.testimonial_rotator_paged a:first-child{float:right}.testimonial_rotator_paged a:last-child{float:left}.testimonial_rotator_nav{}.testimonial_rotator_prev,.testimonial_rotator_next{font-size:20px;line-height:20px;color:#666;color:rgba(0,0,0,0.2);cursor:pointer;position:absolute;top:45%;z-index:8888;transition:all 0.25s}.testimonial_rotator_prev:hover,.testimonial_rotator_next:hover{color:rgba(0,0,0,0.5)}.testimonial_rotator_prev{left:3px}.testimonial_rotator_next{right:3px}.testimonial_rotator_widget_wrap{position:relative}div.testimonial-rotator-error{color:#aa3429;font-weight:bold;display:block;padding:10px;font-size:11px;border-radius:3px;text-align:center;border:solid 1px #aa3429;text-transform:uppercase}
