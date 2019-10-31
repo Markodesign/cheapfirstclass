@@ -32,8 +32,6 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 </script><script>utmx('url','A/B');</script>
 <!-- End of Google Analytics Content Experiment code -->
 
-<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"26092623"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
-
 <meta charset="utf-8" />
 <meta name="google-site-verification" content="KNOLwHSgj0SYI2NNnpbCC_Mmf7jGme5rb0Kk6Gg_-r8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -196,33 +194,6 @@ src="https://www.facebook.com/tr?id=1696994053909977&ev=PageView&noscript=1"
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-<!-- HEADER -->
-<header>
-  <div class="middle-row">
-    <div class="grid3 logo"><a href="/"><img src="/wp-content/themes/cheapfirstclasstheme/images/cheap-first-class-logo.png" alt="Cheap First Class" /></a><a href="https://cheapfirstclass.com">
-      <h2>CheapFirstClass</h2>
-      </a></div>
-    <div class="grid3 description">
-      <p>Find out our Best International <br><strong>First & Business Class </strong><br>
-        Airfare Deals to any Destination</p>
-    </div>
-    <div class="grid4 phone">800 818 2451</div>
-    <div class="grid2 certif" id="block_logo_header">
-      <div class="ubc">US Based <br>
-        Company</div>
-
-<a target="_blank" id="bbblink" class="sehzbus" href="https://www.bbb.org/greater-san-francisco/business-reviews/online-travel-agency/flybusinesscheapcom-in-san-bruno-ca-451517#bbbseal" title="CheapFirstClass.com, Online Travel Agency, San Bruno, CA" style="display: block;position: relative;overflow: hidden; width: 100px; height: 38px; margin: 0px; padding: 0px;"><img style="padding: 0px; border: none;" id="bbblinkimg" src="https://seal-goldengate.bbb.org/logo/sehzbus/flybusinesscheapcom-451517.png" width="200" height="38" alt="FlyBusinessCheap.com, Online Travel Agency, San Bruno, CA" /></a><!--script type="text/javascript">var bbbprotocol = ( ("https:" == document.location.protocol) ? "https://" : "https://" ); document.write(unescape("%3Cscript src='" + bbbprotocol + 'seal-goldengate.bbb.org' + unescape('%2Flogo%2Fflybusinesscheapcom-451517.js') + "' type='text/javascript'%3E%3C/script%3E"));</script-->
-
-</div>
-  </div>
-</header>
-
-
-<nav>
-  <div class="middle-row">
-    <?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
-  </div>
-</nav>
 
 
   <div class="request-a-quote-block invis">

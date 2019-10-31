@@ -58,7 +58,7 @@
 
 
 
-      <p class="pp">CheapFirstClass.com 2014-2018 All Rights Reserved | <a href="/privacy-policy/">Privacy Policy</a></p>
+      <p class="pp">First Class Trips LLC, 2014-2019 | <a href="/privacy-policy/">Privacy Policy</a></p>
     </div>
   </div>
 </footer>

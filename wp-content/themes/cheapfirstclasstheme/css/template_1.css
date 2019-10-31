@@ -1,0 +1,257 @@
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0;
+    font-size:22px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    z-index: 1000;
+}
+.b-popup .b-popup-content{
+    margin:40px auto 0px auto;
+    width:300px;
+    height: 200px;
+    padding:10px;
+    background-color: #fff;
+    /*border-radius:5px;*/
+    box-shadow: 0px 0px 10px #000;
+}
+.b-popup .b-popup-content a {
+    color: green;
+    display: block;
+    float: right;
+    margin-right: 10px;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+#rqform{
+    background: url(//cheapfirstclass.com/wp-content/themes/cheapfirstclasstheme/images/template_1/bg.jpg?v=1.7) center top;
+    display: block;
+    background-size:cover
+}
+.afterlogo_block{
+    width: 1144px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+    padding-top: 50px;
+}
+.telHeader{
+    color:#382f2f;
+    float:right;
+    font-size: 18px;
+    background: url(//cheapfirstclass.com/wp-content/themes/cheapfirstclasstheme/images/template_1/phone.png?v=1.2) left no-repeat;
+    padding-left: 26px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.telHeader span{
+    font-weight: 700;
+}
+.slider .middle-row{
+    display: block;
+    padding-top: 20px;
+    overflow: visible !important;
+}
+.logo{
+    float: left;
+}
+.headerMainMenu{
+    color: #382f2f;
+    font-size: 18px;
+    padding-top: 7px;
+    float: right;
+}
+.headerMainMenu a{
+    display: inline-block;
+    float: left;
+    text-align: center;
+    color:#382f2f;
+    padding-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+.headerMainMenu a:hover{
+    border-bottom: 1px solid #382f2f;
+}
+.headerMainMenu div{
+    width: 150px;
+    float: left;
+}
+.left-part{
+    display: none !important;
+}
+.orderForm{
+    margin-top: 40px;
+}
+.orderForm .tel_number{
+    display: none;
+}
+.slider #request_holder{
+    border-radius: 10px;
+    padding-top: 35px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    padding-right: 40px;
+    margin-left: 0;
+    /*display: block;*/
+    background-color: rgba(0, 0, 0, .5) !important;
+    overflow: visible !important;
+    align-items:unset !important;
+}
+.slider #request_holder input[type=radio]:checked+label span{
+    display: none;
+}
+.slider #request_holder input[type=radio]+label span{
+    display: none;
+}
+.slider #request_holder .request_type{
+    margin-bottom: 10px;
+    border: none;
+    display: block;
+    height: 30px;
+}
+#send_button_holder{
+    margin-top: 0px !important;
+}
+#send_button_holder input{
+    background-color: #27aeed;
+    border-color: #27aeed;
+    box-shadow: none;
+    border-radius: 5px;
+    width: 150px !important;
+    font-size: 16px !important;
+    text-transform: unset !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    height: 45px;
+}
+.slider {
+    height: unset !important;
+    min-height: 630px;
+    padding-bottom: 30px;
+}
+.slider #request_holder input[type=radio]:checked+label{
+    color:#000;
+}
+
+.select-selected{
+    padding-left: 0 !important;
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom-select select {
+    display: none !important; /*hide original SELECT element: */
+}
+
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 11px;
+    margin-left: 7px;
+    width: 0;
+    height: 0;
+    right: 8px;
+    border: 6px solid transparent;
+    background: url('/wp-content/themes/cheapfirstclasstheme/images/template_1/arrow_right.png') no-repeat center;
+}
+.traveler-select .select-selected:after{
+    right: 31px !important;
+}
+.round-trip-select{
+    width: 125px;
+    float: left;
+    margin-right: 25px;
+}
+.traveler-select{
+    width: 140px;
+    float: left;
+
+}
+.cabin-select{
+    width: 156px;
+    float: left;
+}
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-radius: 5px;
+}
+.select-items div{
+    color: #000;
+}
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    font-weight: 700;
+}
+.airportfrom-wrapper:before {
+    width: 28px;
+    height: 19px;
+    background: url("/wp-content/themes/cheapfirstclasstheme/images/template_1/airport-from.png") 7px 0px no-repeat;
+}
+.airportto-wrapper:before {
+    width: 28px;
+    height: 19px;
+    background: url("/wp-content/themes/cheapfirstclasstheme/images/template_1/airport-to.png") 7px 0px no-repeat;
+}
+
+.slider #request_holder  input#airport_from[type=text],.slider #request_holder  input#airport_to[type=text]{
+    padding-left: 30px !important;
+}
+
+.slider #request_holder .content-fr{
+    width: 100% !important;
+    max-width: unset !important;
+}
+#airport_to, #airport_from{
+    width: 277px;
+}
+#request_holder .traveler_contacts.hidden{
+    display: none !important;
+}
+.slider #request_holder .traveler_contacts .name-wrapper input,.slider #request_holder .traveler_contacts .email-wrapper input  {
+    width: 276px !important;
+    margin-right: 19px !important;
+}
+.slider #request_holder .traveler_contacts .phone-wrapper input  {
+    width: 300px !important;
+
+}
+#request_holder .traveler_contacts{
+    margin-top: 10px;
+}
+
+#request_holder .sending_wait {
+    width: 165px !important;
+    position: relative !important;
+}

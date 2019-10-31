@@ -6,9 +6,14 @@ infrom = false;
 jQuery(document).ready(function()
 
 {
-    rq_showCheckedForm();
-    jQuery('#request_holder .request_type input').change(function(){ rq_showCheckedForm(); });
-    rq_initUIElements();
+
+
+        rq_showCheckedForm();
+        jQuery('#request_holder .request_type input').change(function () {
+            rq_showCheckedForm();
+        });
+        rq_initUIElements();
+  
 
 
 
@@ -97,7 +102,6 @@ function rq_sendRequest()
                     send_usa_code = false;
                 }
             }
-            console.log(888);
         });
 
         if (send_usa_code){
