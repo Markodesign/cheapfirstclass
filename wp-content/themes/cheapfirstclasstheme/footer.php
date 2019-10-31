@@ -11,7 +11,6 @@
  */
 ?>
 
-
 <div class="clearing"></div>
 <footer>
   <div class="top-line">
@@ -21,7 +20,7 @@
   <div class="middle-row">
     <div class="grid3 first-block"> <a href="/"><img src="/wp-content/themes/cheapfirstclasstheme/images/cheap-first-class-logo-footer.png" alt="Cheap First Class" /></a>
       <p class="phone">800 818 2451</p>
-
+     
 
 <div class="fb-like" data-href="/" data-width="200" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
 <p>&nbsp;</p>
@@ -32,9 +31,9 @@
     </div>
     <div class="grid5 second-block">
       <?php wp_nav_menu('menu=footer-menu'); ?>
-
-<div class="menu-social-container"><ul class="menu" id="menu-social"><li class="fb menu-item menu-item-type-custom menu-item-object-custom menu-item-24" id="menu-item-24"><a href="https://www.facebook.com/CheapFirstClass" target="_blank">Facebook</a></li>
-<li class="go menu-item menu-item-type-custom menu-item-object-custom menu-item-25" id="menu-item-25"><a href="https://plus.google.com/+Cheapfirstclassnow/about" target="_blank" rel="Publisher">google+</a></li>
+      
+<div class="menu-social-container"><ul class="menu" id="menu-social"><li class="fb menu-item menu-item-type-custom menu-item-object-custom menu-item-24" id="menu-item-24"><a href="https://www.facebook.com/pages/Fly-Business-Cheap/439450042788447" target="_blank">Facebook</a></li>
+<li class="go menu-item menu-item-type-custom menu-item-object-custom menu-item-25" id="menu-item-25"><a href="https://plus.google.com/+Flybusinesscheapbizclass/posts" target="_blank" rel="Publisher">google+</a></li>
 <li class="yt menu-item menu-item-type-custom menu-item-object-custom menu-item-26" id="menu-item-26"><a href="https://www.youtube.com/channel/UCLDM_Uc2Mw34z2GvMv2DrCA" target="_blank">Youtube</a></li>
 <li class="tw menu-item menu-item-type-custom menu-item-object-custom menu-item-27" id="menu-item-27"><a href="https://twitter.com/FirstClassTrips" target="_blank">Twitter</a></li>
 </ul></div>
@@ -55,17 +54,15 @@
   </div>
   <div class="bottom-line">
     <div class="middle-row">
-
-
-
-      <p class="pp">First Class Trips LLC, 2014-2019 | <a href="/privacy-policy/">Privacy Policy</a></p>
+   
+      <p class="pp">CheapFirstClass.com 2014-2015 All Rights Reserved | <a href="/privacy-policy/">Privacy Policy</a></p>
     </div>
   </div>
 </footer>
-
 <?php
 	wp_footer();
 ?>
+
 
 <!-- Google Code for Remarketing Tag -->
 <!--------------------------------------------------
@@ -73,11 +70,9 @@ Remarketing tags may not be associated with personally identifiable information 
 --------------------------------------------------->
 <script type="text/javascript">
 /* <![CDATA[ */
-
 var google_conversion_id = 969351608;
 var google_custom_params = window.google_tag_params;
 var google_remarketing_only = true;
-
 /* ]]> */
 </script>
 <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
@@ -87,6 +82,5 @@ var google_remarketing_only = true;
 <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/969351608/?value=0&amp;guid=ON&amp;script=0"/>
 </div>
 </noscript>
-
 
 </body></html>
