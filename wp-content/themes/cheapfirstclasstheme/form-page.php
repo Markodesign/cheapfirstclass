@@ -13,7 +13,7 @@
  */
 wp_enqueue_script('jquery-ui-autocomplete', '', array('jquery-ui-widget', 'jquery-ui-position'), '1.8.6');
 wp_enqueue_script('jquery-ui-datepicker');
-wp_enqueue_style('jquery-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
+wp_enqueue_style('jquery-style', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
 function request_scripts()
 {
     wp_enqueue_script('request', get_template_directory_uri() . '/request/request.js');
@@ -24,7 +24,7 @@ get_header();
 ?>
 
 <div class="slider">
-  <?php layerslider(1) ?>
+  <?php slider(1) ?>
   <link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/request/request.css?<?php echo time(); ?>' type='text/css' media='all' />
   <!--<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/request/request.js?<?php echo time(); ?>'> </script>-->
   <div class="middle-row">
@@ -76,4 +76,8 @@ International First & Business Class Flights</p>
   </div>
 </div>
 </div>
+
+
+
+
 <?php get_footer(); ?>

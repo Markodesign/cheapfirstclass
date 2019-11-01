@@ -67,6 +67,14 @@
             return $html;
         }
 
+        public function buildFormNew($form_name='form')
+        {
+            $traveler_select = '<select class="traveler_count" name="traveler_count"><option value="1" selected="selected">1 Traveller</option><option value="2">2 Travellers</option><option value="3">3 Travellers</option><option value="4">4 Travellers</option><option value="5">5 Travellers</option><option value="6">6 Travellers</option></select>';
+            $cabin_select = '<select class="cabin" name="cabin"><option selected="selected" value="Business Class">Business Class</option><option value="First Class">First Class</option></select>';
+            $html = str_replace(array('[[traveler_select]]', '[[cabin_select]]'), array($traveler_select, $cabin_select), file_get_contents(__DIR__ . '/'.$form_name.'.htm'));
+            return $html;
+        }
+
         private function _sendEmail($email, $subject, $message,$from = null,$from_email)
         {
             if  ($from === null){
@@ -462,8 +470,8 @@
                         rq_insert_date <= '$time_to'
                         order by `rq_id` desc ";
 
-           // $res = $this->_db->query($sql);
-			$res = array();
+            $res = $this->_db->query($sql);
+			//$res = array();
           //  print_r($sql);
             $arr_names = array(
                "John Stefancik","Simon Curran","Mike Hooker","Lucy Jonson"

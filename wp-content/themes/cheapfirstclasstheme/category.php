@@ -22,6 +22,13 @@ get_header();
 <div class="container inside">
   <div id="container">
     <div id="content" role="main">
+
+    <?
+    if($_GET['request']=='done'){
+        include_once("request_done.tpl");
+   }?>
+
+
       <div class="middle-row">
         <div class="grid9">
 
@@ -41,13 +48,18 @@ get_header();
 				?>
         </div>
         <div class="grid3">
-          <?php get_sidebar(); ?>
+		    <?php
+		    if($_GET['request']=='done'){
+		       wp_nav_menu(array('menu'=> 'footer-menu','container_id'    => 'sidebar-menu'));
+		   }else{
+		        get_sidebar();
+		   }?>
         </div>
       </div>
     </div>
-    <!-- #content --> 
+    <!-- #content -->
   </div>
-  <!-- #container --> 
+  <!-- #container -->
 </div>
 </div>
 <?php get_footer(); ?>

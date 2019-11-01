@@ -41,7 +41,7 @@ get_header('template_2');
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet"  href="/wp-content/themes/cheapfirstclasstheme/css/template_2.css?v=234234324555" type="text/css" media="all">
+<link rel="stylesheet"  href="/wp-content/themes/cheapfirstclasstheme/css/template_2.css?v=343433322" type="text/css" media="all">
 <script type="text/javascript" src="/wp-content/themes/cheapfirstclasstheme/js/template_1.js?v=3334543543543543"></script>
 
 <div class="b-popup" style="display: none" >
@@ -59,7 +59,7 @@ get_header('template_2');
     <header>
         <div class="middle-row">
             <div class="logo">
-                <a href="/"><img src="/wp-content/themes/cheapfirstclasstheme/images/template_2/logo.png" alt="Cheap First Class" /></a>
+                <a href="/"><img src="/wp-content/themes/cheapfirstclasstheme/images/template_1/logo.png" alt="Cheap First Class" /></a>
             </div>
             <div class="telHeader">800 818 <span>2451</span></div>
             <div class="headerMainMenu">
@@ -72,7 +72,7 @@ get_header('template_2');
         </div>
     </header>
 
-    <div class="afterlogo_block"><img src="/wp-content/themes/cheapfirstclasstheme/images/template_2/find.png" alt="Cheap First Class" /></div>
+    <div class="afterlogo_block"><img src="/wp-content/themes/cheapfirstclasstheme/images/template_1/find.png" alt="Cheap First Class" /></div>
 
     <div class="orderForm">
         <?php slider(1) ?>

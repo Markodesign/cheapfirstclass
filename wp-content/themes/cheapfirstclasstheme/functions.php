@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors', 0);
+ini_set('display_startup_errors', 0);
+error_reporting(0);
+
 /**
  * TwentyTen functions and definitions
  *
@@ -70,6 +74,11 @@ if ( ! function_exists( 'twentyten_setup' ) ):
  *
  * @since Twenty Ten 1.0
  */
+
+	function slider($res=false){
+
+	}
+
 function twentyten_setup() {
 
 	// This theme styles the visual editor with editor-style.css to match the theme style.
@@ -243,6 +252,28 @@ function twentyten_excerpt_length( $length ) {
 	return 40;
 }
 add_filter( 'excerpt_length', 'twentyten_excerpt_length' );
+
+
+function show_result_page( $original_template ) {
+  if (preg_match("|/business-class-flights-finder/results/|",$_SERVER['REQUEST_URI'])) {
+	global $wp_query;
+    $wp_query->is_404 = false;
+    status_header(200);
+    return (get_template_directory() . '/result-page---with-parsing.php');
+  }
+	if (preg_match("|/results/|",$_SERVER['REQUEST_URI'])) {
+		global $wp_query;
+		$wp_query->is_404 = false;
+		status_header(200);
+		return (get_template_directory() . '/result-page.php');
+	}
+
+  return $original_template;
+
+}
+
+add_filter( 'template_include', 'show_result_page' );
+
 
 if ( ! function_exists( 'twentyten_continue_reading_link' ) ) :
 /**
@@ -559,7 +590,7 @@ add_action('do_feed_rss2_comments', 'fb_disable_feed', 1);
 add_action('do_feed_atom_comments', 'fb_disable_feed', 1);
 /*dashboard*/function add_dashboard_request_widget()
 {
-	wp_add_dashboard_widget('request_dashboard_widget', 'Request', 'request_widget_function');	
+	wp_add_dashboard_widget('request_dashboard_widget', 'Request', 'request_widget_function');
     // global $wp_meta_boxes;
     // $request_dashboard_widget = $wp_meta_boxes['dashboard']['normal']['core']['request_dashboard_widget'];
     // unset($wp_meta_boxes['dashboard']['normal']['core']['request_dashboard_widget']);
@@ -570,10 +601,14 @@ add_action('wp_dashboard_setup', 'add_dashboard_request_widget');
 // mk
 function request_widget_function()
 {
-    require_once __DIR__ . '/request/Request.class.php';
-    $rc = new Request();
+	require_once __DIR__ . '/request/Request.class.php';
+	$rc = new Request();
+	if (!empty($_POST) && isset($_POST['dashboard_request_widget_clear'] )) {
+		$rc->clearRequestEmails();
+	}
     echo $rc->getWidgetData();
-} function mk_testimonial_get_overall_rating()
+}
+function mk_testimonial_get_overall_rating()
 {
     $rating = 0;
     $type = 'testimonial';
@@ -605,3 +640,10 @@ function request_widget_function()
 
 add_shortcode('getTestimonialTotalRating', 'mk_testimonial_get_overall_rating');
 
+function loader_class(){
+
+	if(!preg_match('|/results/|', $_SERVER['REQUEST_URI'])){
+		echo "style='display:none'";
+	}
+
+}

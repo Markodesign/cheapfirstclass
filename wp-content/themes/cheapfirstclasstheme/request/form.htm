@@ -1,4 +1,23 @@
-    <div id="request_holder">
+<div class="left-part">
+  <div class="left-part__wrapper">
+    <div class="left-part__top">
+      <h2>The <span>lowest prices</span></h2>
+      <h3>On business & first class GUARANTEED</h3>
+    </div>
+    <div class="left-part__bottom">
+      <h4>Call us now & book your flight</h4>
+      <a href="tel:8008182451">800 818 2451</a>
+<!--      <div>-->
+<!--        <a href="https://www.shopperapproved.com/reviews/cheapfirstclass.com/" class="shopperlink"><img src="//www.shopperapproved.com/newseals/13409/white-mini-icon.gif" style="border: 0" alt="Customer Reviews" oncontextmenu="var d = new Date(); alert('Copying Prohibited by Law - This image and all included logos are copyrighted by Shopper Approved \251 '+d.getFullYear()+'.'); return false;" /></a><script type="text/javascript">(function() { var js = window.document.createElement("script"); js.src = '//www.shopperapproved.com/seals/certificate.js'; js.type = "text/javascript"; document.getElementsByTagName("head")[0].appendChild(js); })();</script>-->
+<!--      </div>-->
+    </div>
+
+  </div>
+</div>
+<div id="request_holder">
+  <h2 class="mobile-heading">Cheap business & first class flights</h2>
+  <a href="tel:8008182451" class="tel_number">800 818 2451</a>
+
     <div class="content-fr">
       <div class="request_type">
         <input type="radio" name="type" id="roundtrip" value="roundtrip" checked="checked" />
@@ -9,54 +28,76 @@
         <label for="multicity"><span></span>Multi-city</label>
       </div>
       <div id="type_roundtrip" class="tab">
-        <form>
-          <input type="hidden" name="action" value="send" />
-          <input type="hidden" name="type" value="roundtrip" />
-          <input type="text" name="from" class="airport_autocomplete avf" placeholder="From Airport or City*" />
-          <input type="text" name="to" class="airport_autocomplete avf" placeholder="To Airport or City*" />
-          <input type="text" name="departure" class="rq_datepicker avf" placeholder="Departure" />
-          <input type="text" name="return" class="rq_datepicker avf" placeholder="Return" />
+        <form autocomplete="off" >
+          <input type="hidden" autocomplete="off"   name="action" value="send" />
+          <input type="hidden" autocomplete="off"  name="type" value="roundtrip" />
+          <input type="text" id="airport_from"  autocomplete="off" name="from" class="airport_autocomplete avf" placeholder="From Airport or City*" />
+          <input type="text" autocomplete="off"  name="to" class="airport_autocomplete avf" placeholder="To Airport or City*" />
+          <div class="date-wrapper input-wrapper">
+            <input type="text" autocomplete="off" name="departure" class="rq_datepicker avf" placeholder="Departure" />
+          </div>
+          <div class="date-wrapper input-wrapper">
+            <input type="text" autocomplete="off" name="return" class="rq_datepicker avf" placeholder="Return" />
+          </div>
           [[traveler_select]]
           [[cabin_select]]
           <div class="traveler_contacts hidden">
-            <input type="text" name="name" placeholder="Name*" />
-            <input type="text" name="email" placeholder="E-mail*" />
-            <input type="text" name="mobile" class="rq_mobile" placeholder="Phone mobile*" />
+            <div class="name-wrapper input-wrapper">
+              <input type="text" autocomplete="off" name="name" placeholder="Name*" />
+            </div>
+            <div class="email-wrapper input-wrapper">
+              <input type="text" autocomplete="off" name="email" placeholder="E-mail*" />
+            </div>
+            <div class="phone-wrapper input-wrapper">
+              <input type="text" autocomplete="off" name="mobile" class="rq_mobile" placeholder="Phone mobile*" />
+            </div>
           </div>
         </form>
       </div>
       <div id="type_oneway" class="tab" style="display:none;">
-        <form>
+        <form autocomplete="off">
           <input type="hidden" name="action" value="send" />
           <input type="hidden" name="type" value="oneway" />
-          <input type="text" name="from" class="airport_autocomplete avf" placeholder="From Airport or City*" />
-          <input type="text" name="to" class="airport_autocomplete avf" placeholder="To Airport or City*" />
-          <input type="text" name="departure" class="rq_datepicker avf" placeholder="Departure" />
+          <input type="text" name="from" autocomplete="new-password" class="airport_autocomplete avf" placeholder="From Airport or City*" />
+          <input type="text" name="to" autocomplete="new-password" class="airport_autocomplete avf" placeholder="To Airport or City*" />
+          <div class="date-wrapper input-wrapper">
+            <input type="text" name="departure" class="rq_datepicker avf" placeholder="Departure" />
+          </div>
           [[traveler_select]]
           [[cabin_select]]
           <div class="traveler_contacts hidden">
-            <input type="text" name="name" placeholder="Name*" />
-            <input type="text" name="email" placeholder="E-mail*" />
-            <input type="text" name="mobile" class="rq_mobile" placeholder="Phone mobile*" />
+            <div class="name-wrapper input-wrapper">
+              <input type="text" name="name" placeholder="Name*" />
+            </div>
+            <div class="email-wrapper input-wrapper">
+              <input type="text" name="email" placeholder="E-mail*" />
+            </div>
+            <div class="phone-wrapper input-wrapper">
+              <input type="text" name="mobile" class="rq_mobile" placeholder="Phone mobile*" />
+            </div>
           </div>
         </form>
       </div>
       <div id="type_multicity" class="tab" style="display:none;">
-        <form>
+        <form autocomplete="off">
           <input type="hidden" name="action" value="send" />
           <input type="hidden" name="type" value="multicity" />
           <input type="hidden" id="multicity_counter" value="2" />
           <div id="rq_multicity_holder">
             <div class="rq_multicity rq_mc1">
-              <input type="text" name="from1" class="airport_autocomplete avf" placeholder="From Airport or City*" />
-              <input type="text" name="to1" class="airport_autocomplete avf" placeholder="To Airport or City*" />
-              <input type="text" name="departure1" class="rq_datepicker avf" placeholder="Departure" />
+              <input type="text" name="from1" autocomplete="new-password" class="airport_autocomplete avf" placeholder="From Airport or City*" />
+              <input type="text" name="to1" autocomplete="new-password" class="airport_autocomplete avf" placeholder="To Airport or City*" />
+              <div class="date-wrapper input-wrapper">
+                <input type="text" name="departure1" class="rq_datepicker avf" placeholder="Departure" />
+              </div>
               <span class="remove_multicity" onclick="rq_removeMultiCity(1)">&times;</span>
             </div>
             <div class="rq_multicity rq_mc2">
-              <input type="text" name="from2" class="airport_autocomplete avf" placeholder="From Airport or City*" />
-              <input type="text" name="to2" class="airport_autocomplete avf" placeholder="To Airport or City*" />
-              <input type="text" name="departure2" class="rq_datepicker avf" placeholder="Departure" />
+              <input type="text" name="from2" autocomplete="new-password" class="airport_autocomplete avf" placeholder="From Airport or City*" />
+              <input type="text" name="to2" autocomplete="new-password" class="airport_autocomplete avf" placeholder="To Airport or City*" />
+              <div class="date-wrapper input-wrapper">
+                <input type="text" name="departure2" class="rq_datepicker avf" placeholder="Departure" />
+              </div>
               <span class="remove_multicity" onclick="rq_removeMultiCity(2)">&times;</span>
             </div>
           </div>
@@ -64,15 +105,21 @@
           [[traveler_select]]
           [[cabin_select]]
           <div class="traveler_contacts hidden">
-            <input type="text" name="name" placeholder="Name*" />
-            <input type="text" name="email" placeholder="E-mail*" />
-            <input type="text" name="mobile" class="rq_mobile" placeholder="Phone mobile*" />
+            <div class="name-wrapper input-wrapper">
+              <input type="text" name="name" placeholder="Name*" />
+            </div>
+            <div class="email-wrapper input-wrapper">
+              <input type="text" name="email" placeholder="E-mail*" />
+            </div>
+            <div class="phone-wrapper input-wrapper">
+              <input type="text" name="mobile" class="rq_mobile" placeholder="Phone mobile*" />
+            </div>
           </div>
         </form>
       </div>
       </div>
       <div class="content-bt">
-      <div class="how_it_works_button" onclick="jQuery('#request_holder .how_it_works').css('display', 'block');">How It Works?</div>
+      <!--<div class="how_it_works_button" onclick="jQuery('#request_holder .how_it_works').css('display', 'block');">How It Works?</div>-->
       <div class="how_it_works" style="display:none;"><div class="text">
       <ul><li><span>1</span><small>Call Us Now <strong>800-818-2451</strong></small></li>
 <li><span>2</span><small>Get The Best Flight Deal!</small></li>
@@ -88,9 +135,12 @@
       <div class="after-message" style="display:none;">
         <div class="left-message-block"><p class="blue-text">Thank You! Your Reference Number: <strong id="reference"></strong></p><br>
         <p>Our Travel Specialist will process<br>your request and contact you ASAP</p>
-        <p><a style="cursor:pointer;" onclick="hideSuccessMessage();" class="mess-btn">Another Quote Request</a></p>
+        <p><a style="cursor:pointer;" onclick="jQuery('.fancybox-close-small').click();" class="mess-btn">Another Quote Request</a></p>
         <p>If you need additional assistance or have any questions, please call</p>
         </div>
+
+        <a href="tel:8008182451" class="telMobile">800 818 2451</a>
+
         <div class="right-message-block">
         <img src="/wp-content/themes/cheapfirstclasstheme/images/support-girl.png" alt="800-818-2451" class="support-girl"/>
         </div>

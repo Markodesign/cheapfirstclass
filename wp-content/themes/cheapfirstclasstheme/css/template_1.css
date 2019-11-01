@@ -67,6 +67,7 @@
     font-size: 18px;
     padding-top: 7px;
     float: right;
+    height: 30px;
 }
 .headerMainMenu a{
     display: inline-block;

@@ -28,9 +28,15 @@
     font-weight: normal;
     font-size: 18px;
 }
+.afterLogoNew{
+    margin: 0 auto;
+    width: 1065px;
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
 
 #rqform{
-    background: url(//cheapfirstclass.com/wp-content/themes/cheapfirstclasstheme/images/template_2/bg.jpg?v=1.7) center bottom;
+    background: url(//cheapfirstclass.com/wp-content/themes/cheapfirstclasstheme/images/template_3/bg.jpg?v=1.7) center bottom;
     display: block;
     background-size:cover
 }
@@ -46,7 +52,7 @@
     color:#f2f3fa;
     float:right;
     font-size: 18px;
-    background: url(//cheapfirstclass.com/wp-content/themes/cheapfirstclasstheme/images/template_2/phone.png?v=1.2) left no-repeat;
+    background: url(//cheapfirstclass.com/wp-content/themes/cheapfirstclasstheme/images/template_3/phone.png?v=1.2) left no-repeat;
     padding-left: 26px;
     margin-top: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -101,7 +107,7 @@
     padding-right: 40px;
     margin-left: 0;
     /*display: block;*/
-    background-color: rgba(0, 0, 0, .5) !important;
+    background-color: #fff;
     overflow: visible !important;
     align-items:unset !important;
 }
@@ -116,13 +122,14 @@
     border: none;
     display: block;
     height: 30px;
+    padding-left: 10px;
 }
 #send_button_holder{
     margin-top: 0px !important;
 }
 #send_button_holder input{
-    background-color: #00f2ce;
-    border-color: #00f2ce;
+    background-color: #ffd058;
+    border-color: #ffd058;
     box-shadow: none;
     border-radius: 5px;
     width: 150px !important;
@@ -166,7 +173,7 @@
     height: 0;
     right: 8px;
     border: 6px solid transparent;
-    background: url('/wp-content/themes/cheapfirstclasstheme/images/template_1/arrow_right.png') no-repeat center;
+    background: url('/wp-content/themes/cheapfirstclasstheme/images/template_3/arrow_right.png') no-repeat center;
 }
 .traveler-select .select-selected:after{
     right: 31px !important;
@@ -187,7 +194,7 @@
 }
 /* style the items (options), including the selected item: */
 .select-items div,.select-selected {
-    color: #ffffff;
+    color: #414b52;
     padding: 8px 16px;
     cursor: pointer;
     font-size: 16px;
@@ -255,4 +262,7 @@
 #request_holder .sending_wait {
     width: 165px !important;
     position: relative !important;
+}
+.slider #request_holder input[type=text]{
+    background-color: #f2f3fa;
 }

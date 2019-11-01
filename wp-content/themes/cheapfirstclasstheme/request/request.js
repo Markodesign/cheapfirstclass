@@ -1,14 +1,27 @@
 var current_tab = 'roundtrip';
+into = false;
+infrom = false;
+
+
 jQuery(document).ready(function()
+
 {
-    rq_showCheckedForm();
-    jQuery('#request_holder .request_type input').change(function(){ rq_showCheckedForm(); });
-    rq_initUIElements();
+
+
+        rq_showCheckedForm();
+        jQuery('#request_holder .request_type input').change(function () {
+            rq_showCheckedForm();
+        });
+        rq_initUIElements();
+  
+
+
+
 });
 
 function rq_initUIElements()
 {
-		
+
      jQuery( 'input[name=departure]' ).datepicker({
 		minDate: new Date(),
 		dateFormat: 'mm/dd/yy',
@@ -18,21 +31,49 @@ function rq_initUIElements()
     });
      jQuery( 'input[name=return]' ).datepicker({
 		defaultDate: "+1d",
-		dateFormat: 'mm/dd/yy',
-    });		
+		dateFormat: 'mm/dd/yy'
+    });
 
-    
-    
+    jQuery( '.rq_datepicker' ).datepicker({
+        minDate: new Date(),
+        dateFormat: 'mm/dd/yy',
+        onClose: function( selectedDate ) {
+            jQuery( "input[name=return]" ).datepicker( "option", "minDate", selectedDate );
+        }
+    });
+
     jQuery('input.airport_autocomplete').autocomplete({source: function(request, response)
     {
         jQuery.post('/request.php', {'action': 'autocomplete', 'term': request.term}, function(data)
         {
             response(jQuery.map(data.results, function(item)
             {
-                return { label: item.title, value: item.title }
+                return { label: item.title, value: item.title , country : item.country}
             }));
         }, 'json');
-    }});
+    },
+    select: function( event, ui ) {
+      if(jQuery(this).attr('name')=='from'){
+        infrom = true;
+      }else
+      if(jQuery(this).attr('name')=='to'){
+        into = true;
+      }
+        jQuery(this).attr('data-country',ui.item.country);
+
+    }
+  }).keydown(function functionName() {
+      if(jQuery(this).attr('name')=='from'){
+        infrom = false;
+      }else
+      if(jQuery(this).attr('name')=='to'){
+        into = false;
+      }
+  });
+
+
+
+
     jQuery('#request_holder .avf').bind('change paste keyup ', function()
     {
         rq_showTravelerContactFields();
@@ -50,50 +91,86 @@ function rq_showCheckedForm()
 function rq_sendRequest()
 {
     var current_tab = jQuery('#request_holder .request_type input:checked').attr('id');
+
     if(rq_checkFields())
     {
-        jQuery('#request_holder .response').html('');
-        jQuery('#send_button_holder .send_request').toggle();
-        jQuery('#send_button_holder .sending_wait').toggle();
-        var gatype = 'Roundtrip';
-        switch(current_tab)
-        {
-            case 'roundtrip': gatype = 'Round Trip'; break;
-            case 'oneway': gatype = 'One Way'; break;
-            case 'multicity': gatype = 'Multicity'; break;
-            default:break;
-        }
-        ga('send', 'event', 'Button', gatype, 'Get the deal', 1);
-        jQuery.post('/request.php', rq_form2Object(jQuery('#request_holder div.tab#type_' + current_tab + ' form')), function(response)
-        {
-            if(response.status == 'success')
-            {
-                jQuery('#request_holder div.tab#type_' + current_tab + ' form input[type="text"]').val('');
-                rq_showTravelerContactFields();
-                jQuery('#reference').html(response.reference);
-                jQuery('.content-fr, .content-bt').slideUp('slow', function()
-                {
-                    jQuery('.after-message').slideDown();
-                });
-            }
-            else
-            {
-                jQuery('#request_holder .response').html('<div class="' + response.status + '">' + response.message + '</div>');
-                if(response.extended)
-                {
-                    var
-                        invalid_fields = new Array(),
-                        fields_str = String(response.extended);
-                    invalid_fields = fields_str.split(',');
-                    jQuery.each(invalid_fields, function(index, selector)
-                    {
-                        jQuery(selector).animate({'background-color': '#ff9000'}, 500, function(){jQuery(this).animate({'background-color': 'white'}, 500);});
-                    });
+        var send_usa_code = true;
+        jQuery('#request_holder div.tab#type_' + current_tab + ' form input').each(function(){
+            var attr =  jQuery(this).attr('data-country');
+            if (typeof(attr) != 'undefined'){
+                if (attr == 'no'){
+                    send_usa_code = false;
                 }
             }
+        });
+
+        if (send_usa_code){
+            ga('send', 'event', 'Button', 'Domestic Flight', 'Get the deal');
+            jQuery('.b-popup').show();
+        }else{
+            jQuery('#request_holder .response').html('');
             jQuery('#send_button_holder .send_request').toggle();
             jQuery('#send_button_holder .sending_wait').toggle();
-        }, 'json');
+            var gatype = 'Roundtrip';
+            switch(current_tab)
+            {
+                case 'roundtrip': gatype = 'Round Trip'; break;
+                case 'oneway': gatype = 'One Way'; break;
+                case 'multicity': gatype = 'Multicity'; break;
+                default:break;
+            }
+
+            ga('send', 'event', 'Button', gatype, 'Get the deal', 1);
+            jQuery.post('/request.php', rq_form2Object(jQuery('#request_holder div.tab#type_' + current_tab + ' form')), function(response)
+            {
+                if(response.status == 'success')
+                {
+
+                    jQuery('#loader').show();
+
+                    if(into==true && infrom==true){
+                        var qry = '?request=' +response.reference;
+                    }else{
+                        qry = '?search=none&request='+response.reference;
+                    }
+
+                    var url = window.location.href;
+                    if (url.indexOf('business-class-flights-finder') != -1){
+                        window.location.href="/business-class-flights-finder/results/"+new Date().getTime() + qry ;// + "#rqform";
+                    }else{
+                        window.location.href="/results/"+new Date().getTime() + qry; // + "#rqform";
+                    }
+
+
+                    /* jQuery('#request_holder div.tab#type_' + current_tab + ' form input[type="text"]').val('');
+                     rq_showTravelerContactFields();
+                     jQuery('#reference').html(response.reference);
+                     jQuery('.content-fr, .content-bt').slideUp('slow', function()
+                     {
+                     jQuery('.after-message').slideDown();
+                     }); */
+                }
+                else
+                {
+                    jQuery('#request_holder .response').html('<div class="' + response.status + '">' + response.message + '</div>');
+                    if(response.extended)
+                    {
+                        var
+                            invalid_fields = new Array(),
+                            fields_str = String(response.extended);
+                        invalid_fields = fields_str.split(',');
+                        jQuery.each(invalid_fields, function(index, selector)
+                        {
+                            jQuery(selector).animate({'background-color': '#ff9000'}, 500, function(){jQuery(this).animate({'background-color': 'white'}, 500);});
+                        });
+                    }
+                }
+                jQuery('#send_button_holder .send_request').toggle();
+                jQuery('#send_button_holder .sending_wait').toggle();
+            }, 'json');
+        }
+
+
     }
     else console.log('error fields in ' + current_tab);
 }
@@ -113,8 +190,9 @@ function rq_addMultiCity()
     if(current_tab != 'multicity') return;
     var number = parseInt(jQuery('#request_holder #type_multicity #multicity_counter').val()) + 1;
     jQuery('#request_holder #type_multicity #multicity_counter').val(number);
-    jQuery('<div class="rq_multicity rq_mc' + number + '" style="display: none;"><input type="text" name="from' + number + '" class="airport_autocomplete avf" placeholder="From Airport or City*" /><input type="text" name="to' + number + '" class="airport_autocomplete avf" placeholder="To Airport or City*" /><input type="text" name="departure' + number + '" class="rq_datepicker avf" placeholder="Departure" /><span class="remove_multicity" onclick="rq_removeMultiCity(' + number + ')">&times;</span></div>').appendTo(jQuery('#rq_multicity_holder')).slideDown('slow');
+    jQuery('<div class="rq_multicity rq_mc' + number + '" style="display: none;"><input type="text" name="from' + number + '" class="airport_autocomplete avf" placeholder="From Airport or City*" /><input type="text" name="to' + number + '" class="airport_autocomplete avf" placeholder="To Airport or City*" /><div class="date-wrapper input-wrapper"><input type="text" name="departure' + number + '" class="rq_datepicker avf" placeholder="Departure" /></div><span class="remove_multicity" onclick="rq_removeMultiCity(' + number + ')">&times;</span></div>').appendTo(jQuery('#rq_multicity_holder')).slideDown('slow');
     rq_initUIElements();
+
 }
 
 function rq_removeMultiCity(number)
@@ -125,7 +203,7 @@ function rq_removeMultiCity(number)
 function rq_showTravelerContactFields()
 {
     var show = true;
-    jQuery('#request_holder div.tab#type_' + current_tab + ' form .avf').each(function(index, element)
+    jQuery('#request_holder div.tab#type_' + current_tab + ' .avf').each(function(index, element)
     {
         if(jQuery(element).val() == '') show = false;
     });
@@ -152,6 +230,7 @@ function rq_form2Object($form)
     var unindexed_array = $form.serializeArray();
     var indexed_array = {};
     jQuery.map(unindexed_array, function(n, i) { indexed_array[n['name']] = n['value']; });
+    indexed_array['page_url'] = window.location.href;
     return indexed_array;
 }
 
