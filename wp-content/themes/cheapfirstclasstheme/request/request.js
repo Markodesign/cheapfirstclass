@@ -79,6 +79,13 @@ function rq_initUIElements()
         rq_showTravelerContactFields();
     });
     jQuery('#request_holder div.tab#type_' + current_tab + ' form .avf').change(); // onload check
+	
+    jQuery('#request_holder input').attr('readonly', 'readonly').click(function(e){
+        jQuery(this).removeAttr('readonly');
+    }).blur(function(){
+        jQuery(this).attr('readonly', 'readonly');
+    });
+	
 }
 
 function rq_showCheckedForm()
@@ -95,11 +102,15 @@ function rq_sendRequest()
     if(rq_checkFields())
     {
         var send_usa_code = true;
+	var international = false;
         jQuery('#request_holder div.tab#type_' + current_tab + ' form input').each(function(){
             var attr =  jQuery(this).attr('data-country');
             if (typeof(attr) != 'undefined'){
                 if (attr == 'no'){
                     send_usa_code = false;
+                }
+		if( attr == 'us' && jQuery(this).next(jQuery('input[name^="to"]')).attr('data-country') != 'us' ) {
+                    international = true;
                 }
             }
         });
@@ -132,6 +143,10 @@ function rq_sendRequest()
                         var qry = '?request=' +response.reference;
                     }else{
                         qry = '?search=none&request='+response.reference;
+                    }
+			
+		    if(international) {
+                        qry += '&type=international';
                     }
 
                     var url = window.location.href;
