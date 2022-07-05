@@ -5,7 +5,7 @@
 	"require": {
 	  	"smarty/smarty": "~3.1",
 	  	"zendframework/zendframework1":"~1.12",
-		"dompdf/dompdf": "0.6.*"
+		"dompdf/dompdf": "2.0.*"
 
 
     	},
